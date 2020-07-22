@@ -1,0 +1,16 @@
+{
+  "name": "ts-express-little-example",
+  "version": "0.1.0",
+  "description": "simple examle of express.js / typescript with node.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "cwd-k2",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.7",
+    "express": "^4.17.1",
+    "typescript": "^3.9.7"
+  }
+}
