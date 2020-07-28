@@ -1,12 +1,17 @@
 import express from "express";
 import router  from "./routes/router";
+import path    from "path";
 
 const app: express.Application = express();
+
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "../views"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", router);
+app.use("/assets", express.static(path.join(__dirname, "../assets")));
 
 app.post("/echo", (req: express.Request, res: express.Response) => {
   res.send(req.body);
