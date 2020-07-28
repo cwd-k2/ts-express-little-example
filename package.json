@@ -9,9 +9,11 @@
   "author": "cwd-k2",
   "license": "MIT",
   "dependencies": {
-    "@types/express": "^4.17.7",
     "express": "^4.17.1",
-    "pug": "^3.0.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
     "typescript": "^3.9.7"
   }
 }
