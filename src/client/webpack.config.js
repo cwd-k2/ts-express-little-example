@@ -28,6 +28,32 @@ module.exports = {
         test: /\.js$/,
         loader: "source-map-loader",
         exclude: /.*node_modules.*/
+      },
+
+      {
+        test: /\.scss/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              url: true,
+              sourceMap: true,
+              importLoaders: 2
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      },
+
+      {
+        test: /\.(gif|png|jpg|ttf|svg)/,
+        loader: "url-loader"
       }
     ]
   },
