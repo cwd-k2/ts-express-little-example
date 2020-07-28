@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "simple examle of express.js / typescript with node.js",
   "scripts": {
-    "build": "tsc -p src/server",
+    "build": "tsc -p src/server && webpack --config src/client/webpack.config.js",
     "start": "node app/server/index.js"
   },
   "author": "cwd-k2",

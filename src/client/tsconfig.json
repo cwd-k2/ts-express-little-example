@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "../../app/assets/scripts",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es2020",
+    "target": "ES2020",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "lib": [
+      "es2020",
+      "dom"
+    ]
+  }
+}
