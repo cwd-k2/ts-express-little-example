@@ -12,7 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use("/", router);
-app.use("/assets", express.static(path.join(__dirname, "../assets")));
+app.use("/scripts", express.static(path.join(__dirname, "../scripts")));
+app.use("/styles",  express.static(path.join(__dirname, "../styles")));
+app.use("/images",  express.static(path.join(__dirname, "../images")));
 
 app.post("/echo", (req: express.Request, res: express.Response) => {
   res.send(req.body);

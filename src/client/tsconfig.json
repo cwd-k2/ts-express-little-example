@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "../../app/assets/scripts",
+    "outDir": "../../app/scripts",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "es2020",

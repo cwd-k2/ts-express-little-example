@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     filename: "index.js",
-    path: path.join(__dirname, "../../app/assets/scripts")
+    path: path.join(__dirname, "../../app/scripts")
   },
 
   resolve: {
@@ -29,9 +29,4 @@ module.exports = {
       }
     ]
   },
-
-  // externals: {
-  //   "react": "React",
-  //   "react-dom": "ReactDOM"
-  // }
 };
