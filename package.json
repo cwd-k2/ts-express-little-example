@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "simple examle of express.js / typescript with node.js",
   "scripts": {
-    "build": "tsc -p src/server && webpack --config src/client/webpack.config.js && node-sass src/styles -o app/styles && cpx \"src/views/**/*.pug\" app/views",
+    "build": "npm run build:tsc && npm run build:webpack && npm run build:sass && npm run build:views",
+    "build:tsc": "tsc -p src/server",
+    "build:webpack": "webpack --config src/client/webpack.config.js",
+    "build:sass": "node-sass src/styles -o app/styles",
+    "build:views": "cpx \"src/views/**/*.pug\" app/views",
     "clean": "rimraf app/server app/styles app/views app/scripts",
     "start": "node app/server/index.js"
   },
