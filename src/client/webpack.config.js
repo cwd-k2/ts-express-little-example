@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode:    "development",
   devtool: "source-map",
 
   entry: path.join(__dirname, "index.tsx"),
@@ -38,14 +38,14 @@ module.exports = {
             loader: "css-loader",
             options: {
               url: true,
-              sourceMap: true,
+              sourceMap: false,
               importLoaders: 2
             }
           },
           {
             loader: "sass-loader",
             options: {
-              sourceMap: true
+              sourceMap: false
             }
           }
         ]
